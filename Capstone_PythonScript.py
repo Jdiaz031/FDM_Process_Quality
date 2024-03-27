@@ -21,7 +21,6 @@ def Main(args):
     accelerometer=adafruit_adx134x.ADXL345(i2c)
     with open(args.csv,'w') as csvfile:
         while True:
-
             print("%f %f %f"%accelerometer.acceleration+"\n")
             time.sleep(1)
 
