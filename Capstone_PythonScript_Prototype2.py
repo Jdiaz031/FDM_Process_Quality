@@ -38,8 +38,10 @@ def Main(args):
             output2=result2.get()
 
             csvfile.write(str(time.localtime().tm_hour)+","+str(time.localtime().tm_min)+","+str(time.localtime().tm_sec))
-            csvfile.write(output1)
-            csvfile.write(output2)
+            for i in output1:
+                csvfile.write(","+str(i))
+            for i in output2:
+                csvfile.write(","+str(i))
             csvfile.write("\n")
             time.sleep(1)
 
@@ -62,12 +64,12 @@ def ReadAccelerometerData(board):
     return values
 
 def ReadAccelerometerData2():
-    string=str(",Yokohama,")
-    return string
+    listed=[40,7,6]
+    return listed
 
 def ReadAccelerometerData3():
-    string=str("dominant")
-    return string
+    listed=[30,25,10]
+    return listed
 
 def ExtractThermocoupleData():
     NozzleTemp=board.t_in_read(0)
