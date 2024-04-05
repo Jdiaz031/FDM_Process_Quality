@@ -1,4 +1,3 @@
-smbus2
 argparse
-board
-adafruit-circuitpython-ADXL34x
+multiprocess
+daqhats
