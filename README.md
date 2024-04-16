@@ -9,9 +9,9 @@ which a csv containing sensor data to be saved.
 
 ```
 cd ~/Downloads
-git clone git@github.com:Jdiaz031/FDM_Process_Quality.git
+git clone https://github.com/Jdiaz031/FDM_Process_Quality.git
 cd FDM_Process_Quality
-chmod +X raspberrypi_setup.sh
+chmod +x raspberrypi_setup.sh
 ./raspberrypi_setup.sh
 python3 Capstone_PythonScript.py --csv /path/to/file
 ```
