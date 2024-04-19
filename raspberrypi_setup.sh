@@ -9,4 +9,5 @@ git clone https://github.com/mccdaq/daqhats
 cd daqhats
 sudo ./install.sh
 sudo daqhats_read_eeproms
-mv .vimrc ~/
+cd ..
+mv VIMSetup ~/.vimrc
